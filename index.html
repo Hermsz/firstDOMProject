@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="script.js"></script>
+  <title>Hacktiv Cellular</title>
+</head>
+
+
+<body>
+  <center>
+    <p id="title" class="titleStyle">Hacktiv Cellular</p>
+
+    <p class="subTitleStyle">What would you like to buy ?</p>
+
+    <select id="product" name="emptyProduct" >
+      <option value="" disabled selected>Choose One</option>
+      <option value="Iphone XS">Iphone XS</option>
+      <option value="Samsung Note 8">Samsung Note 8</option>
+      <option value="Huawei Mate">Huawei Mate</option>
+    </select>
+    <p id="blankProduct" class="warning"></p>
+    <p class="subTitleStyle">Choose type of Payment</p>
+
+    <select id="payment" name="emptyPayment">
+      <option value="" disabled selected>Choose payment mode</option>
+      <option value="OVO">OVO</option>
+      <option value="GoPay">GoPay</option>
+      <option value="e-Money">e-Money</option>
+      <option value="Cash">Cash</option>
+    </select>
+    <p id="blankPayment" class="warning"></p>
+
+    <br>
+    <!-- button submit -->
+    <button onclick="submit(product.value, payment.value)"> Submit </button>
+
+    <!-- button reset -->
+    <button id="resetBtn" onclick="reset()">Reset</button>
+    <p id="bill" class="success"></p>
+  </center>
+
+  <div class="footer">
+    <center>&copy; Hacktiv8 Cellular Shop 2019</center>
+  </div>
+
+</body>
+
+</html>
